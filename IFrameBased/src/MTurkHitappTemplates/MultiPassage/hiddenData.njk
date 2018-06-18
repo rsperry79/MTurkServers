@@ -1,0 +1,26 @@
+
+{% for i in range(0, 10) -%}
+  <div id='id{{i}}' style="display: none">${id{{i}}}</div>
+  <div id='query{{i}}' style="display: none">${query{{i}}}</div>
+  <div id='passageA{{i}}' style="display: none">${passageA{{i}}}</div>
+  <div id='passageB{{i}}' style="display: none">${passageB{{i}}}</div>
+  <input id='rating{{i}}' name='rating{{i}}' style="display: none" type="text" />
+  <input id='comment{{i}}' name='comment{{i}}' style="display: none" type="text" />
+  <input id='time{{i}}'  name='time{{i}}' style="display: none" type="text" />
+{%- endfor %}
+
+<script>
+    window.HitData = new Array();  
+     {% for i in range(0, 10) -%}
+      window.HitData.push( {
+      Id: $('#id{{i}}').text(),
+      Query: $('#query{{i}}').text(),
+      PassageA:  $('#passageA{{i}}').text(),
+      PassageB:  $('#passageB{{i}}').text(),
+      Rating: '',
+      Comment: '',
+      Time: ''
+      });
+
+  {%- endfor %}
+ </script>

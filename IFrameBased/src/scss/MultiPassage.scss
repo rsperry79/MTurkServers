@@ -1,0 +1,220 @@
+﻿// File Created by : Richard Sperry
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .dl-horizontal {
+    dt {
+      white-space: normal;
+    }
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  table {
+    border-spacing: 15px;
+  }
+  
+  #collapseTrigger {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dont-break-out {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  
+  body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  #collapseTrigger {
+    display: block;
+    text-decoration: none;
+  }
+  
+  #submitButton {
+    white-space: normal;
+  }
+  
+  #instructionBody table {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  #instructionBody table caption {
+    text-align: left;
+    padding: 0 0 5px 0;
+  }
+  
+  #Inputs {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .content {
+    margin-bottom: 15px;
+  }
+  
+  .radio:first-of-type {
+    margin-top: -5px;
+  }
+  
+  .passage-text {
+    font-size: larger;
+  }
+  
+  .query-text {
+    font-size: x-large;
+  }
+  
+  .display-block {
+    padding: 0px;
+  }
+  
+  .instruction-block {
+    padding-bottom: 1em;
+  }
+  
+  .comment-block {
+    padding-bottom: 1em;
+  }
+  
+  label {
+    font-weight: 700;
+  }
+  
+  $good: #00b500;
+  $good-sel: #80ff00;
+  $bad: #ff8040;
+  $bad-sel: #ff925e;
+  $dup: #dd0000;
+  $dup-sel: #dd0000;
+  $sel-color: black;
+  $unsel-color: white;
+  $sel-padding: 0px;
+  $unsel-padding: 0px;
+  $border-sz: 3px;
+  $sel-margin: 3px;
+  $unsel-margin: 6px;
+  .radioPad {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+  }
+  
+  .radioPad_wrapper_good {
+    display: block;
+    cursor: pointer;
+    background: $good;
+    color: $unsel-color;
+    font-size: 1.5rem;
+    margin: $unsel-margin;
+    text-transform: uppercase;
+    text-align: center;
+    &:active {
+      background: $good-sel !important;
+    }
+    &:hover {
+      background: $good-sel;
+    }
+    padding: $unsel-padding;
+  }
+  
+  .radioPad__wrapper_sel_good {
+    background: $good-sel !important;
+    border-color: black;
+    border-style: solid;
+    border-width: $border-sz;
+    color: $sel-color;
+    padding: $sel-padding;
+    margin: $sel-margin;
+  }
+  
+  .radioPad_wrapper_dup {
+    display: block;
+    cursor: pointer;
+    background: $dup;
+    color: $unsel-color;
+    font-size: 1.5rem;
+    margin: $unsel-margin;
+    text-align: center;
+    text-transform: uppercase;
+    &:active {
+      background: $dup-sel !important;
+    }
+    &:hover {
+      background: $dup-sel;
+    }
+    padding: $unsel-padding;
+  }
+  
+  .radioPad__wrapper_sel_dup {
+    background: $dup-sel !important;
+    border-color: black;
+    border-style: solid;
+    border-width: $border-sz;
+    color: $sel-color;
+    margin: $sel-margin;
+    padding: $sel-padding;
+  }
+  
+  .radioPad_wrapper_bad {
+    background: $bad;
+    color: $unsel-color;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    margin: $unsel-margin;
+    text-align: center;
+    text-transform: uppercase;
+    &:active {
+      background: $bad-sel !important;
+    }
+    &:hover {
+      background: $bad-sel;
+    }
+    padding: $unsel-padding;
+  }
+  
+  .radioPad__wrapper_sel_bad {
+    background: $bad-sel !important;
+    border-color: black;
+    border-style: solid;
+    border-width: $border-sz;
+    color: $sel-color;
+    padding: $sel-padding;
+    margin: $sel-margin;
+  }
+  
+  .radioPad__radio {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  
+  .explanation-text {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 1em;
+  }
+  
+  .next-button {
+    float: left;
+  }

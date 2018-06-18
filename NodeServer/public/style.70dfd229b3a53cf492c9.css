@@ -1,0 +1,181 @@
+.body-content {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.dl-horizontal dt {
+  white-space: normal; }
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 5px; }
+
+table {
+  border-spacing: 15px; }
+
+#collapseTrigger {
+  display: block;
+  text-decoration: none; }
+
+.dont-break-out {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto; }
+
+body {
+  padding-top: 10px;
+  padding-bottom: 20px; }
+
+#collapseTrigger {
+  display: block;
+  text-decoration: none; }
+
+#submitButton {
+  white-space: normal; }
+
+#instructionBody table {
+  font-size: 14px;
+  margin-top: 10px; }
+
+#instructionBody table caption {
+  text-align: left;
+  padding: 0 0 5px 0; }
+
+#Inputs {
+  display: block;
+  margin-top: 10px; }
+
+.content {
+  margin-bottom: 15px; }
+
+.radio:first-of-type {
+  margin-top: -5px; }
+
+.passage-text {
+  font-size: larger; }
+
+.query-text {
+  font-size: x-large; }
+
+.display-block {
+  padding: 0px; }
+
+.instruction-block {
+  padding-bottom: 1em; }
+
+.comment-block {
+  padding-bottom: 1em; }
+
+label {
+  font-weight: 700; }
+
+.radioPad {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle; }
+
+.radioPad_wrapper_good {
+  display: block;
+  cursor: pointer;
+  background: #00b500;
+  color: white;
+  font-size: 1.5rem;
+  margin: 6px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0px; }
+  .radioPad_wrapper_good:active {
+    background: #80ff00 !important; }
+  .radioPad_wrapper_good:hover {
+    background: #80ff00; }
+
+.radioPad__wrapper_sel_good {
+  background: #80ff00 !important;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  color: black;
+  padding: 0px;
+  margin: 3px; }
+
+.radioPad_wrapper_dup {
+  display: block;
+  cursor: pointer;
+  background: #dd0000;
+  color: white;
+  font-size: 1.5rem;
+  margin: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0px; }
+  .radioPad_wrapper_dup:active {
+    background: #dd0000 !important; }
+  .radioPad_wrapper_dup:hover {
+    background: #dd0000; }
+
+.radioPad__wrapper_sel_dup {
+  background: #dd0000 !important;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  color: black;
+  margin: 3px;
+  padding: 0px; }
+
+.radioPad_wrapper_bad {
+  background: #ff8040;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  margin: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0px; }
+  .radioPad_wrapper_bad:active {
+    background: #ff925e !important; }
+  .radioPad_wrapper_bad:hover {
+    background: #ff925e; }
+
+.radioPad__wrapper_sel_bad {
+  background: #ff925e !important;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  color: black;
+  padding: 0px;
+  margin: 3px; }
+
+.radioPad__radio {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  opacity: 0; }
+
+.explanation-text {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 1em; }
+
+.next-button {
+  float: left; }
+
+.hello {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  margin: 20px;
+  text-align: center; }
+
+.hello button {
+  font-size: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
+  min-width: 50px; }
+

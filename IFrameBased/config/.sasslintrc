@@ -1,0 +1,54 @@
+{
+  "options": {
+    "merge-default-rules": false,
+    "formatter": "html",
+    "output-file": "linters/sass-lint.html",
+    "max-warnings": 50
+  },
+  "files": {
+    "include": "sass/**/*.s+(a|c)ss",
+    "ignore": [
+      "sass/vendor/**/*.*"
+    ]
+  },
+  "rules": {
+    "extends-before-mixins": 2,
+    "extends-before-declarations": 2,
+    "placeholder-in-extend": 2,
+    "mixins-before-declarations": [
+      2,
+      {
+        "exclude": [
+          "breakpoint",
+          "mq"
+        ]
+      }
+    ],
+    "no-warn": 1,
+    "no-debug": 1,
+    "no-ids": 0,
+    "no-important": 0,
+    "hex-notation": [
+      2,
+      {
+        "style": "lowercase"
+      }
+    ],
+    "indentation": [
+      4,
+      {
+        "size": 2
+      }
+    ],
+  
+    "variable-for-property": [
+      2,
+      {
+        "properties": [
+          "margin",
+          "content"
+        ]
+      }
+    ]
+  }
+}

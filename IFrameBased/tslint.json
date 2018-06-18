@@ -1,0 +1,25 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:latest", "tslint-react"
+  ],
+  "jsRules": {},
+  "rules": {
+    "quotemark": [true, "single", "avoid-escape", "avoid-template"],
+    "no-unused-expression": [false],
+    "prefer-template": false,
+    "no-console": false,
+    "jsx-wrap-multiline": false,
+    "max-line-length": {
+      "options": [500]
+    },
+    "jsx-no-multiline-js": false
+  },  
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "src/**/__tests__/*"
+    ]
+  }
+}

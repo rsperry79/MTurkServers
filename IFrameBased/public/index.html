@@ -1,0 +1,404 @@
+<!doctype html>
+<html  lang="">
+<head>
+  <title>HitApp</title>
+</head>
+<body>
+  <div class="container">
+    <script>
+    window.supportsES6 = function() {
+        try {
+            new Function('(a = 0) => a');
+            return true;
+        } catch (err) {
+            return false;
+        }
+    }();
+
+    // tslint:disable-next-line:only-arrow-functions
+    $(document).ready(function() {
+        if (!window.supportsES6) {
+            $('#work').detach();
+        }
+
+        $("#submitButton").hide();  
+        $("#submitButton").prop("disabled", true) ;
+        
+        let ai= '';
+        ai = window.appInsights != null ? window.appInsights.cookie || localStorage.getItem('ai_session') : 'null';
+        $('#aiUser').val(ai);
+
+    });
+
+ </script>
+ 
+    
+<div id='id0' style="display: none">${id0}</div>
+  <div id='query0' style="display: none">${query0}</div>
+  <div id='passageA0' style="display: none">${passageA0}</div>
+  <div id='passageB0' style="display: none">${passageB0}}</div>
+  <input id='rating0' name='rating0' style="display: none" type="text" />
+  <input id='comment0' name='comment0' style="display: none" type="text" />
+  <input id='time0'  name='time0' style="display: none" type="text" /><div id='id1' style="display: none">${id1}</div>
+  <div id='query1' style="display: none">${query1}</div>
+  <div id='passageA1' style="display: none">${passageA1}</div>
+  <div id='passageB1' style="display: none">${passageB1}}</div>
+  <input id='rating1' name='rating1' style="display: none" type="text" />
+  <input id='comment1' name='comment1' style="display: none" type="text" />
+  <input id='time1'  name='time1' style="display: none" type="text" /><div id='id2' style="display: none">${id2}</div>
+  <div id='query2' style="display: none">${query2}</div>
+  <div id='passageA2' style="display: none">${passageA2}</div>
+  <div id='passageB2' style="display: none">${passageB2}}</div>
+  <input id='rating2' name='rating2' style="display: none" type="text" />
+  <input id='comment2' name='comment2' style="display: none" type="text" />
+  <input id='time2'  name='time2' style="display: none" type="text" /><div id='id3' style="display: none">${id3}</div>
+  <div id='query3' style="display: none">${query3}</div>
+  <div id='passageA3' style="display: none">${passageA3}</div>
+  <div id='passageB3' style="display: none">${passageB3}}</div>
+  <input id='rating3' name='rating3' style="display: none" type="text" />
+  <input id='comment3' name='comment3' style="display: none" type="text" />
+  <input id='time3'  name='time3' style="display: none" type="text" /><div id='id4' style="display: none">${id4}</div>
+  <div id='query4' style="display: none">${query4}</div>
+  <div id='passageA4' style="display: none">${passageA4}</div>
+  <div id='passageB4' style="display: none">${passageB4}}</div>
+  <input id='rating4' name='rating4' style="display: none" type="text" />
+  <input id='comment4' name='comment4' style="display: none" type="text" />
+  <input id='time4'  name='time4' style="display: none" type="text" /><div id='id5' style="display: none">${id5}</div>
+  <div id='query5' style="display: none">${query5}</div>
+  <div id='passageA5' style="display: none">${passageA5}</div>
+  <div id='passageB5' style="display: none">${passageB5}}</div>
+  <input id='rating5' name='rating5' style="display: none" type="text" />
+  <input id='comment5' name='comment5' style="display: none" type="text" />
+  <input id='time5'  name='time5' style="display: none" type="text" /><div id='id6' style="display: none">${id6}</div>
+  <div id='query6' style="display: none">${query6}</div>
+  <div id='passageA6' style="display: none">${passageA6}</div>
+  <div id='passageB6' style="display: none">${passageB6}}</div>
+  <input id='rating6' name='rating6' style="display: none" type="text" />
+  <input id='comment6' name='comment6' style="display: none" type="text" />
+  <input id='time6'  name='time6' style="display: none" type="text" /><div id='id7' style="display: none">${id7}</div>
+  <div id='query7' style="display: none">${query7}</div>
+  <div id='passageA7' style="display: none">${passageA7}</div>
+  <div id='passageB7' style="display: none">${passageB7}}</div>
+  <input id='rating7' name='rating7' style="display: none" type="text" />
+  <input id='comment7' name='comment7' style="display: none" type="text" />
+  <input id='time7'  name='time7' style="display: none" type="text" /><div id='id8' style="display: none">${id8}</div>
+  <div id='query8' style="display: none">${query8}</div>
+  <div id='passageA8' style="display: none">${passageA8}</div>
+  <div id='passageB8' style="display: none">${passageB8}}</div>
+  <input id='rating8' name='rating8' style="display: none" type="text" />
+  <input id='comment8' name='comment8' style="display: none" type="text" />
+  <input id='time8'  name='time8' style="display: none" type="text" /><div id='id9' style="display: none">${id9}</div>
+  <div id='query9' style="display: none">${query9}</div>
+  <div id='passageA9' style="display: none">${passageA9}</div>
+  <div id='passageB9' style="display: none">${passageB9}}</div>
+  <input id='rating9' name='rating9' style="display: none" type="text" />
+  <input id='comment9' name='comment9' style="display: none" type="text" />
+  <input id='time9'  name='time9' style="display: none" type="text" />
+
+<script>
+    window.HitData = new Array();  
+     window.HitData.push( {
+      Id: $('#id0').text(),
+      Query: $('#query0').text(),
+      PassageA:  $('#passageA0').text(),
+      PassageB:  $('#passageB0').text(),
+      Rating: '',
+      Comment: '',
+      Time: ''
+      });window.HitData.push( {
+      Id: $('#id1').text(),
+      Query: $('#query1').text(),
+      PassageA:  $('#passageA1').text(),
+      PassageB:  $('#passageB1').text(),
+      Rating: '',
+      Comment: '',
+      Time: ''
+      });window.HitData.push( {
+      Id: $('#id2').text(),
+      Query: $('#query2').text(),
+      PassageA:  $('#passageA2').text(),
+      PassageB:  $('#passageB2').text(),
+      Rating: '',
+      Comment: '',
+      Time: ''
+      });window.HitData.push( {
+      Id: $('#id3').text(),
+      Query: $('#query3').text(),
+      PassageA:  $('#passageA3').text(),
+      PassageB:  $('#passageB3').text(),
+      Rating: '',
+      Comment: '',
+      Time: ''
+      });window.HitData.push( {
+      Id: $('#id4').text(),
+      Query: $('#query4').text(),
+      PassageA:  $('#passageA4').text(),
+      PassageB:  $('#passageB4').text(),
+      Rating: '',
+      Comment: '',
+      Time: ''
+      });window.HitData.push( {
+      Id: $('#id5').text(),
+      Query: $('#query5').text(),
+      PassageA:  $('#passageA5').text(),
+      PassageB:  $('#passageB5').text(),
+      Rating: '',
+      Comment: '',
+      Time: ''
+      });window.HitData.push( {
+      Id: $('#id6').text(),
+      Query: $('#query6').text(),
+      PassageA:  $('#passageA6').text(),
+      PassageB:  $('#passageB6').text(),
+      Rating: '',
+      Comment: '',
+      Time: ''
+      });window.HitData.push( {
+      Id: $('#id7').text(),
+      Query: $('#query7').text(),
+      PassageA:  $('#passageA7').text(),
+      PassageB:  $('#passageB7').text(),
+      Rating: '',
+      Comment: '',
+      Time: ''
+      });window.HitData.push( {
+      Id: $('#id8').text(),
+      Query: $('#query8').text(),
+      PassageA:  $('#passageA8').text(),
+      PassageB:  $('#passageB8').text(),
+      Rating: '',
+      Comment: '',
+      Time: ''
+      });window.HitData.push( {
+      Id: $('#id9').text(),
+      Query: $('#query9').text(),
+      PassageA:  $('#passageA9').text(),
+      PassageB:  $('#passageB9').text(),
+      Rating: '',
+      Comment: '',
+      Time: ''
+      });
+ </script>
+
+    <div id="work">
+      ﻿<!-- Instructions (collapsible) -->
+<div class="instruction-block">
+  <div class="col-xs-12 col-md-12">
+    <div class="card panel-danger">
+      <!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature -->
+      <a class="card-header" href="javascript:void(0);" id="collapseTrigger">
+        <strong>Instructions</strong>
+        <span class="collapse-text">(Click to expand)</span>
+      </a>
+      <div class="card-body" id="instructionBody">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <label>Background: </label>
+          <p class="instruction">For this task we are trying to help students world-wide find other sources to the same information by training
+            the computer to know when a passage matches information.</p>
+          <label>What we need to know:</label>
+          <p class="instruction">To do this correctly we need to train the computer to not only detect a few different things. First is are both
+            given answers answering the question presented. Next is are both passages on the same subject, but different
+            answers. Finally, is one or both given answers have an answer that does not answer the question.</p>
+          <label>What we need you to do:</label>
+          <div class="todo">
+            <div class="instruction">First, we need you to label these hits with one of the following:</div>
+            <ul>
+              <li>
+                <strong>SAME</strong> – If both answers give an answer to the question but do not give different answers</li>
+              <li>
+                <strong>Different</strong> – Both answer the question but give different answers.</li>
+              <li>
+                <strong>Missing Answer</strong> - One or both answers are not an answer to the question.</li>
+            </ul>
+          </div>
+          <p class="instruction">Then we need you to comment if the question was difficult or you see something that can improve what we are doing.
+            We also need you to mark things like plagiarism, where one passage has a section copied word for word. </p>
+          <label> Please read over the following examples:</label>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <label for="query1">Question to be answered: </label>
+              <div class="query" id="query1">Who is the president of the United States?</div>
+            </div>
+            <br>
+            <div>
+              <label for="AnswerA1">Answer 1:</label>
+              <div class="Answer-text" id="AnswerA1">Donald John Trump is the 45th and current President of the United States, in office since January 20, 2017.
+                Before entering politics, he was a businessman and television personality.</div>
+            </div>
+            <br>
+            <div>
+              <label for="AnswerB1">Answer 2:</label>
+              <div class="Answer-text" id="AnswerB1">The president of the United States of America is Donald Trump.</div>
+            </div>
+            <br>
+            <div>
+              <label for="rating1">Should be labeled: </label>
+              <div class="rating" id="rating1">Same</div>
+            </div>
+            <br>
+            <div>
+              <label for="reason1">Reason:</label>
+              <div class="reason" id="reason1">Both Answers have the same information but not are not the same Answer</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <label for="query2">Question to be answered: </label>
+              <div class="query" id="query2">Who is the president of the United States?</div>
+            </div>
+            <br>
+            <div>
+              <label for="AnswerA2">Answer 1:</label>
+              <div class="Answer-text" id="AnswerA2">Barack Hussein Obama II is the 44th and current President of the United States.</div>
+            </div>
+            <br>
+            <div>
+              <label for="AnswerB2">Answer 2:</label>
+              <div class="Answer-text" id="AnswerB2"></div>The president of the United States of America is Barack Obama.</div>
+            <div>
+              <br>
+            </div>
+            <div>
+              <label for="rating2">Should be labeled: </label>
+              <div class="rating" id="rating2">Same</div>
+            </div>
+            <br>
+            <div>
+              <label for="reason2">Reason:</label>
+              <div class="reason" id="reason2">This should be labeled as the same, because the answers give the same information, even though they are not
+                correct.</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <label for="query3">Question to be answered: </label>
+              <div class="query" id="query3">Who is the president of the United States?</div>
+            </div>
+            <br>
+            <div>
+              <label for="AnswerA3">Answer 1:</label>
+              <div class="Answer-text" id="AnswerA3">Donald John Trump is the 45th and current President of the United States, in office since January 20, 2017.
+                Before entering politics, he was a businessman and television personality.</div>
+            </div>
+            <br>
+            <div>
+              <label for="AnswerB3">Answer 2:</label>
+              <div class="Answer-text" id="AnswerB3">The president of the United States of America is Barack Hussein Obama II.</div>
+            </div>
+            <br>
+            <div>
+              <label for="rating3">Should be labeled: </label>
+              <div class="rating" id="rating3">Different</div>
+            </div>
+            <br>
+            <div>
+              <label for="reason3">Reason:</label>
+              <div class="reason" id="reason3">While both were true, they are not the same information. We need to have matching information to support the
+                other passage.</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <label for="query4">Question to be answered: </label>
+              <div class="query" id="query4">Who is the president of the United States?</div>
+            </div>
+            <br>
+            <div>
+              <label for="AnswerA4">Answer 1:</label>
+              <div class="Answer-text" id="AnswerA4">Donald John Trump is the 45th and current President of the United States, in office since January 20, 2017.
+                Before entering politics, he was a businessman and television personality.</div>
+            </div>
+            <br>
+            <div>
+              <label for="AnswerB4">Answer 2:</label>
+              <div class="Answer-text" id="AnswerB4">The president of France is Emmanuel Macron.</div>
+            </div>
+            <br>
+            <div>
+              <label for="rating4">Should be labeled: </label>
+              <div class="rating" id="rating4">Missing Answer</div>
+            </div>
+            <br>
+            <div>
+              <label for="reason4">Reason:</label>
+              <div class="reason" id="reason4">Only one passage has an answer to the question.</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <label for="query5">Question to be answered: </label>
+              <div class="query" id="query5">Can cats eat pancakes?</div>
+            </div>
+            <br>
+            <div>
+              <label for="AnswerA5">Answer 1:</label>
+              <div class="Answer-text" id="AnswerA5">
+                Donald John Trump is the 45th and current President of the United States, in office since January 20, 2017. Before entering
+                politics, he was a businessman and television personality.
+              </div>
+            </div>
+            <br>
+            <div>
+              <label for="AnswerB5">Answer 2:</label>
+              <div class="Answer-text" id="AnswerB5">The president of France is Emmanuel Macron.</div>
+            </div>
+            <br>
+            <div>
+              <label for="rating5">Should be labeled: </label>
+              <div class="rating" id="rating5">Missing Answer</div>
+            </div>
+            <br>
+            <div>
+              <label for="reason5">Reason:</label>
+              <div class="reason" id="reason5">Both given answers have no answer to the question asked.</div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <label>Tips:</label>
+          <p class="instruction"> We love feedback and based on some feedback we have implemented the following features.</p>
+          To rate press the number keys one the top left of your keyboard:
+            <ul>
+              <li> 1 to select "SAME"</li>
+              <li>2 to select "DIFFERENT"</li>
+              <li>3 to select "MISSING ANSWER"</li>
+            </ul>
+            Then press the right arrow key to move on to the next item.
+      
+
+        </div>
+        <br/>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <label>What we need you to keep in mind:</label>
+          <p class="instruction">Spam hurts us, in fact it hurts the world. While we work for a paycheck, we choose to do this work because how
+            we are helping the world to make a better place. Lower quality labels make some things not possible, for example
+            one goal we have is to be able to help a vision impaired person to be able to quickly find the answers they need.
+            To do this we need to be extremely accurate, so we can give them smaller sections of the answer, so they can
+            choose the one they really want to read. </p>
+          <p class="instruction">
+            We need your feedback on the hitapp itself, the data we give you, and how we can better work together. </p>
+          <p class="instruction">
+            Finally, we need you to know that we value the work you do as none of our goals could be accomplished without you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End instructions -->
+      <div id="main"></div>
+    </div>
+  </div>
+</body>
+</html>

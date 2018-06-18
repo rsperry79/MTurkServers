@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>MTurk.ExternalQuestion.NodeServer</Name>
+    <RootNamespace>Server</RootNamespace>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+    <LaunchUrl>MultiPassage?RecordId=864655EE-38B2-4072-B20E-007ADFBC269E&amp;assignmentId=123RVWYBAZW00EXAMPLE456RVWYBAZW00EXAMPLE&amp;hitId=123RVWYBAZW00EXAMPLE&amp;turkSubmitTo=https://www.mturk.com/&amp;workerId=AZ3456EXAMPLE</LaunchUrl>
+    <NameOfLastUsedPublishProfile>ExternalQuestionServer - Web Deploy</NameOfLastUsedPublishProfile>
+    <EnableTypeScript>true</EnableTypeScript>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <ToolsVersionPromptShown>0.0</ToolsVersionPromptShown>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f717b66f-5cf7-4a5f-b2e2-3aa73cfcc40d</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <ExcludeFromPackageFolders Include="tsconfig.json">
+      <FromTarget>MTurk.ExternalQuestion.Server.nsproj</FromTarget>
+    </ExcludeFromPackageFolders>
+    <ExcludeFromPackageFolders Include="tslint.json">
+      <FromTarget>MTurk.ExternalQuestion.Server.nsproj</FromTarget>
+    </ExcludeFromPackageFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludeFromPackageFiles Include=".eslintrc; .jshintignore; .jshintrc;   ">
+      <FromTarget>MTurk.ExternalQuestion.Server.nsproj</FromTarget>
+    </ExcludeFromPackageFiles>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="config\build\templates.development.js" />
+    <Compile Include="config\build\templates.entry-points.js" />
+    <Compile Include="config\build\templates.production.js" />
+    <Compile Include="config\jest\cssTransform.js" />
+    <Compile Include="config\jest\fileTransform.js" />
+    <Compile Include="config\jest\setup.js" />
+    <Compile Include="config\jest\typescriptTransform.js" />
+    <Compile Include="config\misc\env.js" />
+    <Compile Include="config\misc\paths.js" />
+    <Compile Include="config\misc\polyfills.js" />
+    <Compile Include="config\webpack\webpack.config.azure-production.js" />
+    <Compile Include="config\webpack\webpack.config.base.js" />
+    <Compile Include="config\webpack\webpack.config.dev-server.js" />
+    <Compile Include="config\webpack\webpack.config.development.js" />
+    <Compile Include="config\webpack\webpack.config.production.js" />
+    <Compile Include="scripts\build.js" />
+    <Compile Include="scripts\production.js" />
+    <Compile Include="scripts\start.js" />
+    <Compile Include="scripts\test.js" />
+    <Content Include="process.json" />
+    <Content Include="README.md" />
+    <Content Include="yarn.lock" />
+    <Content Include=".eslintrc" />
+    <Content Include=".jshintignore" />
+    <Content Include=".jshintrc" />
+    <Content Include="config\misc\.sasslintrc" />
+    <Content Include="config\misc\tsconfig.prod.json" />
+    <Content Include="config\misc\tsconfig.test.json" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="public\asset-manifest.json" />
+    <Content Include="public\index.html" />
+    <Content Include="public\main.10bd7355a9c716f5e688.bundle.js" />
+    <Content Include="public\style.70dfd229b3a53cf492c9.css" />
+    <Content Include="public\vendors.db194f3b2cfbda7d2358.bundle.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="config\" />
+    <Folder Include="config\build\" />
+    <Folder Include="config\jest\" />
+    <Folder Include="config\misc\" />
+    <Folder Include="config\webpack\" />
+    <Folder Include="public\" />
+    <Folder Include="scripts\" />
+    <Folder Include="src\" />
+    <Folder Include="src\actions\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\components\MultiPassageRating\" />
+    <Folder Include="src\components\__tests__\" />
+    <Folder Include="src\constants\" />
+    <Folder Include="src\containers\" />
+    <Folder Include="src\models\" />
+    <Folder Include="src\reducers\" />
+    <Folder Include="src\scss\" />
+    <Folder Include="src\template\" />
+    <Folder Include="src\types\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\components\Hello.css" />
+    <Content Include="src\components\MultiPassageRating\instructions.html" />
+    <Content Include="src\components\MultiPassageRating\test.html" />
+    <Content Include="src\logo.svg" />
+    <Content Include="src\scss\MultiPassage.scss" />
+    <Content Include="src\template\index.html" />
+    <Content Include="tsconfig.json" />
+    <Content Include="tslint.json" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\actions\index.tsx" />
+    <TypeScriptCompile Include="src\components\DisplayPassageN.tsx" />
+    <TypeScriptCompile Include="src\components\DisplayQuery.tsx" />
+    <TypeScriptCompile Include="src\components\Hello.tsx" />
+    <TypeScriptCompile Include="src\components\HitappCommentsView.tsx" />
+    <TypeScriptCompile Include="src\components\MultiPassageRating\DisplayDataView.tsx" />
+    <TypeScriptCompile Include="src\components\MultiPassageRating\Index.tsx" />
+    <TypeScriptCompile Include="src\components\MultiPassageRating\WorkActionView.tsx" />
+    <TypeScriptCompile Include="src\components\ProgressBar.tsx" />
+    <TypeScriptCompile Include="src\components\__tests__\DisplayPassageN.test.tsx" />
+    <TypeScriptCompile Include="src\components\__tests__\DisplayQuery.test.tsx" />
+    <TypeScriptCompile Include="src\components\__tests__\Hello.test.tsx" />
+    <TypeScriptCompile Include="src\components\__tests__\ProgressBar.test.tsx" />
+    <TypeScriptCompile Include="src\constants\Hello.tsx" />
+    <TypeScriptCompile Include="src\containers\Hello.tsx" />
+    <TypeScriptCompile Include="src\main.tsx" />
+    <TypeScriptCompile Include="src\models\MultiPassageModel.ts" />
+    <TypeScriptCompile Include="src\reducers\index.tsx" />
+    <TypeScriptCompile Include="src\types\HitItemDto.cs.d.ts" />
+    <TypeScriptCompile Include="src\types\HitResultDto.cs.d.ts" />
+    <TypeScriptCompile Include="src\types\images.d.ts" />
+    <TypeScriptCompile Include="src\types\IMturkRequest.d.ts" />
+    <TypeScriptCompile Include="src\types\IStoreState.d.ts" />
+    <TypeScriptCompile Include="src\types\module.d.ts" />
+    <TypeScriptCompile Include="src\types\MultiPassage.d.ts" />
+    <TypeScriptCompile Include="src\types\window.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

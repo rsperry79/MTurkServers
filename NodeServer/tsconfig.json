@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "module": "esnext",
+    "removeComments": false,
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "typeRoots": ["./src/types","./src/types/**/*", "./node_modules/@types"]
+  },
+  "include": [
+     "src/models/*" ,"src/types", "src/components/*" , "src/components/**/*" ,   "src/containers/*",   "src/*"
+  ], 
+  "outDir": "tsc",
+  "exclude": [
+    "node_modules/**/*",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}
