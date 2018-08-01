@@ -17,6 +17,7 @@ To build this, you will need the following installed:
 
 ## Projects ##
 1. NodeServer - The NodeJs Server
+2. IFrame - Used to build MTurk hosted hitapps
 
 ## Usefull commands ##
 Export as zip with .gitignore folders removed  
