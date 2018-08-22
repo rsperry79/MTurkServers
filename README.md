@@ -1,6 +1,5 @@
-﻿
 # MTurk Hitapp Template #
-This project is to build a MTurk hitapps for data collection
+This project is to build MTurk hitapps for data collection either using an external question or using the Amazon provided IFrame.
 
 ## Technology used 
 1. Node - JavaScript engine 
