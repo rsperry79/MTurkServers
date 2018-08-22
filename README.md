@@ -1,6 +1,6 @@
 ﻿
 # MTurk Hitapp Template #
-This project is to build and make a MTurk external question server hitapp
+This project is to build a MTurk hitapps for data collection
 
 ## Technology used 
 1. Node - JavaScript engine 
